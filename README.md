@@ -27,7 +27,7 @@ list so other people can find it.
 
 ## Install
 
-    $ npm install passport-oauth2
+    $ npm install passport-netapp
 
 ## Usage
 
@@ -108,19 +108,12 @@ $ make view-cov
 
 #### Funding
 
-This software is provided to you as open source, free of charge.  The time and
-effort to develop and maintain this project is dedicated by [@jaredhanson](https://github.com/jaredhanson).
-If you (or your employer) benefit from this project, please consider a financial
-contribution.  Your contribution helps continue the efforts that produce this
-and other open source software.
-
-Funds are accepted via [PayPal](https://paypal.me/jaredhanson), [Venmo](https://venmo.com/jaredhanson),
-and [other](http://jaredhanson.net/pay) methods.  Any amount is appreciated.
+This software is provided to you as open source, free of charge.  
 
 ## License
 
 [The MIT License](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2011-2016 Jared Hanson <[http://jaredhanson.net/](http://jaredhanson.net/)>
+Copyright (c) 2017-2019 Phain Kumar Palaparthi
 
 <a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/vK9dyjRnnWsMzzJTQ57fRJpH/jaredhanson/passport-oauth2'>  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/vK9dyjRnnWsMzzJTQ57fRJpH/jaredhanson/passport-oauth2.svg' /></a>
