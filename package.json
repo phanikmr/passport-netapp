@@ -1,0 +1,52 @@
+{
+  "name": "passport-netapp",
+  "version": "1.0.0",
+  "description": "NetApp OAuth 2.0 authentication strategy for Passport.",
+  "keywords": [
+    "passport",
+    "auth",
+    "authn",
+    "authentication",
+    "authz",
+    "authorization",
+    "oauth",
+    "oauth2"
+  ],
+  "author": {
+    "name": "Phani Kumar Palaparthi",
+    "email": "ppk.phanikumar@gmail.com",
+    "url": "http://bitsblender.wixsite.com/racepad"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:phanikmr/passport-netapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/phanikmr/passport-netapp/issues"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
+  "dependencies": {
+    "passport-strategy": "1.x.x",
+    "uid2": "0.0.x",
+    "utils-merge": "1.x.x"
+  },
+  "devDependencies": {
+    "make-node": "0.3.x",
+    "mocha": "2.x.x",
+    "chai": "2.x.x",
+    "chai-passport-strategy": "1.x.x"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js test/**/*.test.js"
+  }
+}
