@@ -1,12 +1,11 @@
-# passport-oauth2
+# passport-netapp
 
 [![Build](https://img.shields.io/travis/jaredhanson/passport-oauth2.svg)](https://travis-ci.org/jaredhanson/passport-oauth2)
 [![Coverage](https://img.shields.io/coveralls/jaredhanson/passport-oauth2.svg)](https://coveralls.io/r/jaredhanson/passport-oauth2)
 [![Quality](https://img.shields.io/codeclimate/github/jaredhanson/passport-oauth2.svg?label=quality)](https://codeclimate.com/github/jaredhanson/passport-oauth2)
 [![Dependencies](https://img.shields.io/david/jaredhanson/passport-oauth2.svg)](https://david-dm.org/jaredhanson/passport-oauth2)
 
-
-General-purpose OAuth 2.0 authentication strategy for [Passport](http://passportjs.org/).
+NetApp OAuth 2.0 authentication strategy for [Passport](http://passportjs.org/).
 
 This module lets you authenticate using OAuth 2.0 in your Node.js applications.
 By plugging into Passport, OAuth 2.0 authentication can be easily and
@@ -33,7 +32,7 @@ list so other people can find it.
 
 #### Configure Strategy
 
-The OAuth 2.0 authentication strategy authenticates users using a third-party
+The NetApp OAuth 2.0 authentication strategy authenticates users using a third-party
 account and OAuth 2.0 tokens.  The provider's OAuth 2.0 endpoints, as well as
 the client identifer and secret, are specified as options.  The strategy
 requires a `verify` callback, which receives an access token and profile,
