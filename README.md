@@ -39,12 +39,13 @@ requires a `verify` callback, which receives an access token and profile,
 and calls `cb` providing a user.
 
 ```js
-passport.use(new OAuth2Strategy({
-    authorizationURL: 'https://www.example.com/oauth2/authorize',
-    tokenURL: 'https://www.example.com/oauth2/token',
+passport.use(new NetAppStrategy({
+    authorizationURL: 'https://login.netapp.com/ms_oauth/oauth2/endpoints/oauthservice/authorize',
+    tokenURL: 'https://login.netapp.com/ms_oauth/oauth2/endpoints/oauthservice/tokens',
     clientID: EXAMPLE_CLIENT_ID,
     clientSecret: EXAMPLE_CLIENT_SECRET,
-    callbackURL: "http://localhost:3000/auth/example/callback"
+    callbackURL: "http://localhost:3000/auth/example/callback",
+    profileURL: "https://login.netapp.com/ms_oauth/resources/EXAMPLE_CLIENT_ID/me"
   },
   function(accessToken, refreshToken, profile, cb) {
     User.findOrCreate({ exampleId: profile.id }, function (err, user) {
