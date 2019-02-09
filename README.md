@@ -45,7 +45,8 @@ passport.use(new NetAppStrategy({
     clientID: EXAMPLE_CLIENT_ID,
     clientSecret: EXAMPLE_CLIENT_SECRET,
     callbackURL: "http://localhost:3000/auth/example/callback",
-    profileURL: "https://login.netapp.com/ms_oauth/resources/EXAMPLE_CLIENT_ID/me"
+    profileURL: "https://login.netapp.com/ms_oauth/resources/EXAMPLE_CLIENT_ID/me",
+    scope: 'EXAMPLE_CLIENT_ID.me'
   },
   function(accessToken, refreshToken, profile, cb) {
     User.findOrCreate({ exampleId: profile.id }, function (err, user) {
